@@ -26,9 +26,16 @@ public class RepeticaoController {
 		 * 
 		 *  
 		 */
+
+		int contador = 1;
+		String returnMessage = "";
+
+		while(contador <= numero) {
+			returnMessage = returnMessage + contador;
+			contador++;
+		}
 		
-		
-		return ResponseEntity.ok(<APÓS O ALGORITMO COLOCAR A VARIAVEL String DE RETORNO AQUI>);
+		return ResponseEntity.ok(returnMessage);
 	}
 	
 }
